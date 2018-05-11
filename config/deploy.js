@@ -11,7 +11,8 @@ module.exports = function(deployTarget) {
     accessKeyId: process.env.AWS_KEY,
     secretAccessKey: process.env.AWS_SECRET,
     bucket: process.env.BUCKET,
-    region: process.env.REGION
+    region: process.env.REGION,
+    filePattern: '**/*.{js,css,html,png,gif,ico,jpg,map,xml,txt,svg,swf,eot,ttf,woff,woff2,otf,wasm}'
   };
 
   if (deployTarget === 'development') {
