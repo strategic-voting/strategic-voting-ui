@@ -1,1 +1,6 @@
 <div><h1>Welcome to Glimmer!</h1></div>
+<ul>
+  {{#each speakers key="@index" as |speaker|}}
+    <li>{{speaker}}</li>
+  {{/each}}
+</ul>
