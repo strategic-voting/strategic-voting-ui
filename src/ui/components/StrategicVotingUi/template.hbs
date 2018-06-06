@@ -8,17 +8,24 @@
     <input type="text" id="postalcode" class="form-control" placeholder="Postal Code" required autofocus>
     <label for="postalcode">Postal Code</label>
   </div>
-
-  <button class="btn btn-lg btn-primary btn-block" onclick={{action whoToVote}}>Who Should I Vote?</button>
+  <button class="btn btn-lg btn-primary btn-block" onclick={{action whoToVote}}>
+    Who Should I Vote?</button>
+</div>
+<div id="ridinginfo" class="container hideRiding">
+  <div class="row">
+    Your Riding is: {{riding}}
   </div>
-  <div id="ridinginfo" class="container hideRiding">
-    <div class="row">
-      Your Riding is: {{riding}}
-    </div>
-    <div class="row">
-      Vote for: {{vote}}!
-    </div>
-    <div class="row">
-      Candidate: {{candidate}}.
-    </div>
+  <div class="row">
+    Vote for: {{vote}}!
+  </div>
+  <div class="row">
+    Candidate: {{candidate}}.
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <a class="twitter-share-button"
+      href="https://twitter.com/intent/tweet?text=Now I know who'll best defeat Doug Ford. I'm voting strategically in this election, you can too! #NotFord #onelxn #onpoli.">
+      Tweet</a>
+  </div>
 </div>
