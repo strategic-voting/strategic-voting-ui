@@ -13,6 +13,10 @@ export default class StrategicVotingUi extends Component {
     @tracked
     private vote: any;
 
+    @tracked
+    private socialMediaText = encodeURI("Now I know who'll best defeat Doug Ford. "
+        + "I'm voting strategically in this election, you can too! #NotFord #onelxn #onpoli.");
+
     public whoToVote() {
         let postalcode = document.getElementById('postalcode').value;
         let postalCodeNoWhitespace = postalcode.replace(/\s+/, '');
