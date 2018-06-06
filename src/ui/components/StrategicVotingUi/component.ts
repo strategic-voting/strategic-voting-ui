@@ -22,6 +22,7 @@ export default class StrategicVotingUi extends Component {
                 this.riding = candidates[0].riding;
                 this.candidate = this.candidateToVoteFor(candidates, vote);
                 this.vote = vote;
+                this.showRiding();
             });
     }
 
@@ -36,5 +37,9 @@ export default class StrategicVotingUi extends Component {
             parties[candidate.party] = candidate.name;
         });
         return parties;
+    }
+
+    private showRiding() {
+        document.getElementById('ridinginfo').className += ' showRiding';
     }
 }

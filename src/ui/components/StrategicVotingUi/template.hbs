@@ -10,11 +10,15 @@
   </div>
 
   <button class="btn btn-lg btn-primary btn-block" onclick={{action whoToVote}}>Who Should I Vote?</button>
-</div>
-
-<div>
-  Your Riding is: {{riding}}
-</div>
-<div>
-  Vote for: {{vote}}! Candidate: {{candidate}}.
+  </div>
+  <div id="ridinginfo" class="container hideRiding">
+    <div class="row">
+      Your Riding is: {{riding}}
+    </div>
+    <div class="row">
+      Vote for: {{vote}}!
+    </div>
+    <div class="row">
+      Candidate: {{candidate}}.
+    </div>
 </div>
