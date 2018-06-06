@@ -91,3 +91,8 @@ body {
 .showRiding {
   display: block;
 }
+
+.fb-share-button {
+  padding-top: -2px;
+  padding-left: 1em;
+}
