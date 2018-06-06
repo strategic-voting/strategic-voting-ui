@@ -1,6 +1,9 @@
-<div><h1>Welcome to Glimmer!</h1></div>
-<ul>
-  {{#each speakers key="@index" as |speaker|}}
-    <li>{{speaker}}</li>
-  {{/each}}
-</ul>
+<div><h1>Vote Anybody But Ford!</h1></div>
+<div class="postalcode-container">
+  <input id="postalcode" type="text">
+  <button onclick={{action whoToVote}}>Who Should I Vote?</button>
+</div>
+
+<div>
+  Vote for: {{vote}}!
+</div>
