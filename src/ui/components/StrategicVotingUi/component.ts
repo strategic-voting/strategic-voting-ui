@@ -22,9 +22,8 @@ export default class StrategicVotingUi extends Component {
         let postalCodeNoWhitespace = postalcode.replace(/\s+/, '');
         fetch(`${this.BASE_URL}/${postalCodeNoWhitespace}`)
             .then((response) => response.json())
-            .then(({ vote, candidates }) => {
-                this.riding = candidates[0].riding;
-                this.candidate = this.candidateToVoteFor(candidates, vote);
+            .then(({ vote, riding }) => {
+                this.riding = riding;
                 this.vote = vote;
                 this.showRiding();
             });
